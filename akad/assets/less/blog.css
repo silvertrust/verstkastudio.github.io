@@ -4,7 +4,7 @@
 #blog-content {
   width: 90%;
   display: grid;
-  margin: 5px auto 40px auto;
+  margin: 120px auto 40px auto;
   grid-template-columns: auto minmax(220px, 300px);
   grid-auto-rows: auto;
   grid-row-gap: 100px;
@@ -339,7 +339,6 @@
 }
 #blog-content #side-bar main #instagram #magazine {
   display: grid;
-  height: 300px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 5px;

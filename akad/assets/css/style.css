@@ -458,7 +458,6 @@ body #content #portfolio #select_block #category ul li {
 }
 body #footer {
   display: grid;
-  margin-bottom: 4rem;
   grid-template-columns: 38% 40%;
   grid-column-gap: 10px;
   -ms-flex-pack: distribute;

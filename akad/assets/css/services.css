@@ -1,5 +1,7 @@
 #content-box {
-  margin-top: 80px;
+  width: 85%;
+  margin: 80px auto 0 auto;
+  display: block;
 }
 #articles {
   display: grid;
@@ -7,7 +9,9 @@
   grid-auto-rows: auto;
   grid-gap: 10px;
   justify-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 80px;
 }
 #articles .article p {
@@ -16,7 +20,8 @@
   text-align: center;
   margin: 0 50%;
   color: #4b4949;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 #articles #article-content {
   width: 95%;
@@ -60,7 +65,8 @@
 }
 #articles .h2_box {
   left: 50%;
-  transform: translateX(-200%);
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
 }
 #options {
   width: 95%;
@@ -68,9 +74,13 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   grid-gap: 20px;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   justify-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto 120px auto;
 }
 #options .option {
@@ -98,7 +108,9 @@
   grid-template-columns: 95%;
   grid-auto-rows: auto;
   margin: 0 auto 80px auto;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-items: center;
 }
 #pricing #plans {
@@ -107,7 +119,9 @@
   grid-auto-rows: auto;
   grid-gap: 65px;
   width: 90%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   justify-items: center;
   margin: 0 auto;
 }
@@ -118,7 +132,8 @@
   width: 318px;
   padding-top: 40px;
   padding-left: 10%;
-  box-shadow: 1px 5px 25px 5px rgba(90, 89, 89, 0.5);
+  -webkit-box-shadow: 1px 5px 25px 5px rgba(90, 89, 89, 0.5);
+          box-shadow: 1px 5px 25px 5px rgba(90, 89, 89, 0.5);
 }
 #pricing #plans .plan-box h2 {
   font-family: 'Montserrat', sans-serif;
@@ -130,12 +145,15 @@
 #pricing #plans .plan-box .price {
   padding: 10px 5px 5px 5px;
   height: 35px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   background-color: #7beec7;
   color: white;
   opacity: 1;
   text-align: center;
   margin-top: 10px;
+  -webkit-transition: top 0.6s ease-in-out;
   transition: top 0.6s ease-in-out;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -156,16 +174,21 @@
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: box-shadow, transform;
+  -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
+  transition-property: -webkit-box-shadow, -webkit-transform;
   transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform, -webkit-box-shadow, -webkit-transform;
 }
 .hvr-growed-shadow:hover,
 .hvr-grow-shadow:focus,
 .hvr-grow-shadow:active {
-  box-shadow: 1px 10px 25px 5px rgba(90, 89, 89, 0.5);
+  -webkit-box-shadow: 1px 10px 25px 5px rgba(90, 89, 89, 0.5);
+          box-shadow: 1px 10px 25px 5px rgba(90, 89, 89, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }

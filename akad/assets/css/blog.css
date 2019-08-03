@@ -4,7 +4,7 @@
 #blog-content {
   width: 90%;
   display: grid;
-  margin: 0 auto 40px auto;
+  margin: 120px auto 40px auto;
   grid-template-columns: auto minmax(220px, 300px);
   grid-auto-rows: auto;
   grid-row-gap: 100px;
@@ -13,6 +13,7 @@
 #blog-content #info-box {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   grid-row-gap: 100px;
 }
@@ -31,8 +32,12 @@
   grid-row-gap: 20px;
 }
 #blog-content #info-box article .data-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #blog-content #info-box article .data-box .date {
   display: block;
@@ -40,7 +45,8 @@
   position: relative;
   height: 30px;
   background-color: #7beec7;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 #blog-content #info-box article .data-box .date h3 {
   position: absolute;
@@ -49,7 +55,8 @@
   height: 12px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -102,23 +109,34 @@
   height: 1px;
   margin-top: 5px;
   background-color: #7beec7;
+  -webkit-transition: width ease-in-out 0.4s;
   transition: width ease-in-out 0.4s;
 }
 #blog-content #info-box article #nav-wrapper #nav-block {
   margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 #blog-content #info-box article #nav-wrapper #nav-block #prev,
 #blog-content #info-box article #nav-wrapper #nav-block #next {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #blog-content #info-box article #nav-wrapper #nav-block #prev i,
 #blog-content #info-box article #nav-wrapper #nav-block #next i {
   position: absolute;
+  -webkit-transition: left, right ease-in-out 0.2s;
   transition: left, right ease-in-out 0.2s;
   font-weight: bolder;
 }
@@ -142,16 +160,20 @@
 }
 #blog-content #info-box article #nav-wrapper #nav-block #next:hover #right {
   right: -18px;
-  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
   color: #7beec7;
 }
 #blog-content #info-box article #nav-wrapper #nav-block #prev:hover #left {
   left: -18px;
-  transform: translateX(-5px);
+  -webkit-transform: translateX(-5px);
+          transform: translateX(-5px);
   color: #7beec7;
 }
 #blog-content #link-wrapper {
   display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #blog-content #link-wrapper:hover #line {
@@ -160,6 +182,7 @@
 #blog-content #side-bar {
   display: grid;
   grid-template-columns: 100%;
+  grid-auto-rows: -webkit-max-content;
   grid-auto-rows: max-content;
   grid-row-gap: 50px;
   justify-items: flex-start;
@@ -195,9 +218,15 @@
   background-color: #e7e7e7;
   height: 100%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
 }
 #blog-content #side-bar #search-wrapper #img-wrapper img {
@@ -232,9 +261,15 @@
   height: 100%;
   padding-left: 15px;
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   cursor: pointer;
 }
 #blog-content #side-bar main .list li:hover {
@@ -249,7 +284,9 @@
   border-bottom: 1px solid rgba(129, 128, 128, 0.4);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 0;
   margin-bottom: 30px;
 }
@@ -267,14 +304,18 @@
 #blog-content #side-bar main #post ul li span {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 #blog-content #side-bar main #post ul #underline {
   position: absolute;
   border: 1px solid #7beec7;
   bottom: -1px;
+  -webkit-transition: left ease-in-out 0.3s;
   transition: left ease-in-out 0.3s;
   z-index: 1;
 }
@@ -284,15 +325,19 @@
 }
 #blog-content #side-bar main #post .article-box .tab {
   position: absolute;
+  -webkit-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
 }
 #blog-content #side-bar main #post .article-box .tab article {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
 }
 #blog-content #side-bar main #post .article-box .tab article img {
   width: 80px;
   height: 81px;
+  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 #blog-content #side-bar main #post .article-box .tab article a {
@@ -322,6 +367,8 @@
 }
 #blog-content #side-bar main #tags #tags-box .tag {
   display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   color: #999999;
   font-family: 'Montserrat';
@@ -332,6 +379,7 @@
   background-color: #d8d4d4;
   margin-top: 5px;
   text-decoration: none;
+  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 #blog-content #side-bar main #tags #tags-box .tag:hover {
@@ -339,7 +387,6 @@
 }
 #blog-content #side-bar main #instagram #magazine {
   display: grid;
-  height: 300px;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: auto;
   grid-gap: 5px;

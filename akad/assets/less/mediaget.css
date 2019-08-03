@@ -34,6 +34,9 @@
   body #content #choose #choose_content #options {
     margin-left: 30px;
   }
+  #pricing #plans .plan-box {
+    width: 250px;
+  }
 }
 @media screen and (max-width: 992px) {
   body #wrapper #content main #infoblock {
@@ -290,11 +293,31 @@
     grid-gap: 50px;
   }
   #pricing #plans .plan-box {
-    width: 100%;
+    width: fit-content;
+    padding: 40px 50px;
     box-shadow: 1px 5px 25px 5px rgba(90, 89, 89, 0.5);
   }
 }
 @media screen and (max-width: 541px) {
+  #blog-content {
+    margin: 20px auto 40px auto;
+    grid-row-gap: 20px;
+  }
+  #blog-content #info-box {
+    grid-row-gap: 50px;
+  }
+  main {
+    margin: 40px auto 0 auto;
+  }
+  .h2_box {
+    margin: 20px auto 20px auto;
+  }
+  body #wrapper {
+    grid-gap: 20px;
+  }
+  #pricing .title p {
+    width: 100%;
+  }
   #content #img {
     height: 350px;
   }
