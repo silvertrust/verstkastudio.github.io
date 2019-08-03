@@ -306,6 +306,8 @@
     grid-gap: 50px;
   }
   #pricing #plans .plan-box {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
