@@ -4,7 +4,7 @@
 #blog-content {
   width: 90%;
   display: grid;
-  margin: 120px auto 40px auto;
+  margin: 0 auto 40px auto;
   grid-template-columns: auto minmax(220px, 300px);
   grid-auto-rows: auto;
   grid-row-gap: 100px;
