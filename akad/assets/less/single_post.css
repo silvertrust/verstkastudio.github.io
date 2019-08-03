@@ -1,0 +1,51 @@
+#info-box #heading h2 {
+  display: block;
+  color: #60606e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#info-box #heading #date-box {
+  display: flex;
+  align-items: center;
+  background-color: #7beec7;
+  color: white;
+  width: fit-content;
+  padding: 8px 5px;
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+#info-box #notice {
+  display: flex;
+}
+#info-box #notice #green-line {
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  background-color: #7beec7;
+}
+#info-box #notice p {
+  font-style: italic;
+  padding: 40px;
+  background-color: #EFEFF0;
+}
+#info-box article article {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+#info-box article article #foto {
+  height: 500px;
+  background-color: #EFEFF0;
+}
+#info-box article article #content {
+  display: block;
+}
+#info-box article article #content p {
+  margin-bottom: 20px;
+}

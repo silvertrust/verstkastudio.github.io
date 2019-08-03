@@ -1,0 +1,208 @@
+body #wrapper #content-box {
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+}
+body #wrapper #content-box #articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-auto-rows: auto;
+  background-color: white;
+  justify-items: center;
+  margin-bottom: 120px;
+}
+body #wrapper #content-box #benefits {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
+}
+body #wrapper #content-box #benefits #options {
+  display: grid;
+  grid-template-columns: repeat(3, 27%);
+  grid-auto-rows: auto;
+  column-gap: 40px;
+  row-gap: 20px;
+  margin-bottom: 120px;
+  justify-content: center;
+  justify-items: center;
+}
+body #wrapper #content-box #benefits #options .option {
+  position: relative;
+}
+body #wrapper #content-box #benefits #options img {
+  display: inline-block;
+}
+body #wrapper #content-box #benefits #options h3 {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  margin-left: 15px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #61616b;
+}
+body #wrapper #content-box #benefits #options p {
+  color: rgba(109, 109, 114, 0.7);
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 14px;
+  text-transform: initial;
+  line-height: 2;
+  text-align: start;
+}
+body #wrapper #content-box #team {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  justify-items: center;
+  margin-bottom: 80px;
+}
+body #wrapper #content-box #team #teamWrapper #photos {
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  grid-auto-rows: auto;
+  justify-items: center;
+  justify-content: space-between;
+  grid-gap: 20px;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx {
+  position: relative;
+  overflow: hidden;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx .img {
+  width: 100%;
+  display: block;
+  transition: opacity 0.2s ease-in-out;
+  overflow: hidden;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx .img img {
+  width: 100%;
+  height: 335px;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx .teamBox {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx .teamBox h2 {
+  position: absolute;
+  width: fit-content;
+  left: 50%;
+  top: 130%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 10px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #545464;
+  transition: top 0.4s ease-in-out;
+  opacity: 1;
+  z-index: 20;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx:hover .img {
+  opacity: 0.4;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx:hover h2 {
+  top: 25%;
+}
+body #wrapper #content-box #team #teamWrapper #photos #xxx:hover .button {
+  top: 50%;
+}
+body #wrapper #content-box #team #teamWrapper #readMore {
+  background-color: #efeff0;
+  margin-top: 25px;
+}
+body #wrapper #content-box #team #teamWrapper #readMore p {
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(97, 93, 93, 0.8);
+  margin-left: 10px;
+}
+body #wrapper #content-box #Doe_clients {
+  display: grid;
+  grid-template-columns: repeat(2, 41%);
+  grid-auto-rows: auto;
+  justify-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+  grid-column-gap: 30px;
+}
+body #wrapper #content-box #Doe_clients #doe {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  grid-row-gap: 20px;
+  justify-items: center;
+  width: 100%;
+}
+body #wrapper #content-box #Doe_clients #doe #photo {
+  width: 82px;
+  height: 83px;
+  background-image: url(../img/johnDoe.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body #wrapper #content-box #Doe_clients #doe #tegs {
+  width: 90%;
+}
+body #wrapper #content-box #Doe_clients #doe .elem {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+}
+body #wrapper #content-box #Doe_clients #doe p {
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 14px;
+  text-transform: initial;
+  color: rgba(109, 109, 114, 0.7);
+  line-height: 2;
+  text-align: center;
+}
+body #wrapper #content-box #Doe_clients #doe #johnDoe {
+  padding: 10px 5px 5px 5px;
+  height: 35px;
+  width: fit-content;
+  background-color: #7beec7;
+  color: white;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+body #wrapper #content-box #Doe_clients #clients {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-auto-rows: 90px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+body #wrapper #content-box #Doe_clients #clients .photo {
+  width: 131px;
+  height: 85px;
+  border: 1px solid rgba(156, 155, 155, 0.4);
+  padding: 10px;
+}
+body #wrapper #content-box #Doe_clients #clients .photo img {
+  width: 100%;
+  height: 100%;
+}

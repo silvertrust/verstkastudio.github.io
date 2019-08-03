@@ -1,0 +1,225 @@
+    body #wrapper #content-box {
+        //background-color: rgba(184, 181, 11, 0.6);
+        margin-top:150px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        #articles{
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 20px;
+            grid-auto-rows: auto;
+            background-color: white;
+            justify-items: center;
+            margin-bottom: 120px;
+        }
+        #benefits{
+            display: grid;
+           // background-color: rgba(184, 181, 11, 0.6);
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+            justify-items: center;
+            
+            #options{
+                .option{ position: relative;}
+                display: grid;
+                grid-template-columns: repeat(3,27%);
+                grid-auto-rows: auto;
+                column-gap: 40px;
+                row-gap: 20px;
+                margin-bottom: 120px;
+               // background-color: rgba(184, 181, 11, 0.6);
+                justify-content: center;
+                justify-items: center;
+                img{ display:inline-block;}
+                h3{
+                    display: inline-block;
+                    position: absolute;
+                    top: 15px;
+                    margin-left:15px;
+                   // margin-left: 15px;
+                    box-sizing: border-box;
+                   // background-color: rgba(184, 181, 11, 0.6);
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                    color: #61616b;
+                }
+                p{
+                    color: rgba(109, 109,114,0.7);
+                    font-family: 'Open Sans';
+                    font-weight: 100;
+                    font-size: 14px;
+                    text-transform: initial;
+                    line-height: 2;
+                    text-align: start;
+                }
+            }
+        }
+        #team {
+            display: grid;
+          //  background-color: rgba(184, 181, 11, 0.6);
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+            justify-items: center; 
+            margin-bottom: 80px;
+            #teamWrapper {
+                #photos{
+                    // background-color: rgba(223, 167, 94,0.6);
+                     display: grid;
+                     grid-template-columns: repeat(4,23%);
+                     grid-auto-rows: auto;
+                     justify-items: center;
+                     justify-content:space-between;
+                     grid-gap: 20px;
+                     #xxx{
+                         //width: 265px;
+                         //height: 375px;
+                         position: relative;
+                         overflow: hidden;
+                         //background-color: rgba(223, 167, 94,0.6);
+                         .img{
+                             width: 100%;
+                             display: block;
+                             transition: opacity .2s ease-in-out;
+                             overflow: hidden;
+                            //background-color: rgba(223, 167, 94,0.6);
+                             img{
+                                 width: 100%;
+                                 height: 335px;
+                             };
+                         }
+                         .teamBox{
+                             position: absolute;
+                             overflow: hidden;
+                             width: 100%;
+                             height: 100px;
+                             //background-color: rgba(109, 109,114, 0.7);
+                             top: 50%;
+                             left: 50%;
+                             transform: translate(-50%,-50%);
+                             h2{
+                                 position: absolute;
+                                 width: fit-content;
+                                 left: 50%;
+                                 top: 130%;
+                                 transform: translate(-50%, -50%);
+                                 margin-bottom: 10px;
+                                 display: inline-block;
+                                 font-family: 'Montserrat', sans-serif;
+                                 font-weight: bold;
+                                 font-size: 16px;
+                                 text-transform: uppercase;
+                                 color: #545464;
+                                 transition: top 0.4s ease-in-out;  
+                                 opacity: 1;       
+                                 z-index: 20;   
+                             }
+                         }
+                     }
+                     #xxx:hover{
+                         //background-color: red;
+                         .img{opacity: 0.4;}
+                         h2{top: 25%;}
+                         .button{top: 50%;}
+                     }  
+                 }
+                #readMore {
+                    background-color: #efeff0;
+                    margin-top: 25px;
+                    p{
+                        display: inline-block;
+                        font-family: 'Open Sans';
+                        font-weight: 100;
+                        font-size: 14px;
+                        font-style: italic;
+                        color: rgba(97, 93, 93, 0.8);
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        #Doe_clients{
+            display: grid;
+            //background-color: rgba(184, 181, 11, 0.6);
+            grid-template-columns: repeat(2,41%);
+            grid-auto-rows: auto;
+            justify-items: center; 
+            justify-content: center;
+            margin-bottom: 80px; 
+            grid-column-gap: 30px;
+            #doe{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+                grid-row-gap: 20px;
+                justify-items: center;
+               // background-color: darkkhaki;
+                width: 100%;
+                #photo{
+                    width: 82px;
+                    height: 83px;
+                    background-image: url(../img/johnDoe.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                #tegs{
+                   // position: relative;
+                    width: 90%;
+                    //height: 180px;
+                   // background-color: antiquewhite;
+                }
+                .elem{
+                    display: none;
+                    max-height: 0;
+                    overflow: hidden;
+                   // position: absolute;
+                    text-align: center;
+                   // top:50%;
+                   // transform: translateY(-50%);
+                    opacity: 0;
+                    transition: all 2s ease-in-out;
+                }
+                p{
+                    font-family: 'Open Sans';
+                    font-weight: 100;
+                    font-size: 14px;
+                    text-transform: initial;
+                    color: rgba(109, 109,114, 0.7);
+                    line-height: 2;
+                    text-align: center;
+                }
+                #johnDoe{
+                    padding: 10px 5px 5px 5px;
+                    height: 35px;
+                    width: fit-content;
+                    background-color: #7beec7;
+                    color: white;
+                    text-align: center;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: bold;
+                    font-size: 16px;
+                    text-transform: uppercase; 
+                }
+            }
+            #clients{
+                display: grid;
+                grid-template-columns: repeat(3,auto);
+                grid-auto-rows: 90px;
+                grid-column-gap: 20px;
+                grid-row-gap: 20px;
+                .photo{
+                    width: 131px;
+                    height: 85px;
+                  //  background-color: antiquewhite;
+                    border: 1px solid rgba(156, 155, 155, 0.4);
+                    padding: 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }

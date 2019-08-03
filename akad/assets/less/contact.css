@@ -1,0 +1,76 @@
+main {
+  display: grid;
+  margin: 120px auto 40px auto;
+  width: 90%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 30px;
+}
+main #contact-form {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-gap: 30px;
+  grid-auto-rows: max-content;
+}
+main #contact-form .input {
+  position: relative;
+  display: inline-block;
+  height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fefcf9;
+}
+main #contact-form .input input,
+main #contact-form .input textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 10px 15px;
+  color: #cccccc;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main #contact-form .input p {
+  position: absolute;
+  color: #cccccc;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  left: 15px;
+  top: 20px;
+  transition: all ease-in-out 0.2s;
+  padding: 0 5px;
+}
+main #contact-form .input textarea p {
+  position: absolute;
+  color: #cccccc;
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  left: 15px;
+  top: 20px;
+  transition: all ease-in-out 0.2s;
+  padding: 0 5px;
+  background-color: red;
+}
+main #contact-form #MailName {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: minmax(263px, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: auto;
+}
+main #contact-form .readButton {
+  width: 165px;
+  height: 50px;
+  margin: 0;
+  border: none;
+}
+main #map {
+  height: 841px;
+  background-color: rgba(223, 119, 119, 0.3);
+}

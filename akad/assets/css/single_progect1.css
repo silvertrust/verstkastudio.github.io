@@ -1,0 +1,236 @@
+img {
+  display: inline-block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  background-image: url(../img/progects/imgonline.jpg);
+  background-size: cover;
+}
+#slide1 {
+  background-image: url(../img/progects/keyboard-2098301_640.jpg);
+}
+#slide2 {
+  background-image: url(../img/progects/laptop-2055522_640.jpg);
+}
+#slide3 {
+  background-image: url(../img/progects/music-1290087_640.jpg);
+}
+#slide4 {
+  background-image: url(../img/progects/hard-drive-1348507_640.jpg);
+}
+.h2_box {
+  margin: 100px auto 20px auto;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+#content p {
+  color: #60606e;
+  font-family: 'Open Sans';
+  font-weight: 100;
+  font-size: 14px;
+  text-transform: initial;
+  line-height: 2;
+  text-align: start;
+  width: 65%;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+}
+main {
+  width: 90%;
+  display: block;
+  margin: 80px auto 0 auto;
+}
+main h3 {
+  margin-top: 70px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #60606e;
+}
+main #infoblock {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 70px;
+}
+main #infoblock #info {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  grid-gap: 20px;
+}
+main #infoblock #info p {
+  width: 100%;
+  text-align: start;
+  color: #999999;
+}
+main #infoblock #info img {
+  display: block;
+  width: 90%;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  background-color: #999999;
+}
+main #infoblock #side-bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  grid-gap: 20px;
+}
+main #infoblock #side-bar p {
+  text-align: start;
+  margin: 0;
+  width: 100%;
+}
+main #infoblock #side-bar #icons {
+  display: block;
+  text-align: left;
+}
+main #infoblock #side-bar #icons a {
+  display: inline-block;
+  color: #60606e;
+  font-size: 16px;
+  margin-left: 15px;
+  -webkit-transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
+}
+main #infoblock #side-bar #icons a:first-child {
+  margin-left: 0;
+}
+main #infoblock #side-bar #icons :hover {
+  color: #7beec7;
+}
+main #progects {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+}
+main #progects #nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+main #progects #nav #nav-menu,
+main #progects #nav #nav-arrows {
+  display: block;
+}
+main #progects #nav #nav-menu a,
+main #progects #nav #nav-arrows a {
+  display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  margin-left: 10px;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+main #progects #nav #nav-menu a i,
+main #progects #nav #nav-arrows a i {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #60606e;
+  -webkit-transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s;
+}
+main #progects #nav #nav-menu a:hover,
+main #progects #nav #nav-arrows a:hover {
+  background-color: #7beec7;
+}
+main #progects #nav #nav-menu a:hover i,
+main #progects #nav #nav-arrows a:hover i {
+  color: white;
+}
+main #progects #nav #nav-arrows {
+  text-align: end;
+}
+main #progects #slider {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 230px);
+  grid-auto-rows: -webkit-max-content;
+  grid-auto-rows: max-content;
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin: 50px auto;
+  width: 100%;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main #progects #slider .slide {
+  position: relative;
+  height: 130px;
+  width: 230px;
+  overflow: hidden;
+  cursor: pointer;
+}
+main #progects #slider .slide #slide1,
+main #progects #slider .slide #slide2,
+main #progects #slider .slide #slide3,
+main #progects #slider .slide #slide4 {
+  display: block;
+  height: 150px;
+  background-size: cover;
+}
+main #progects #slider .slide #focus-tab {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+  z-index: 100;
+}
+main #progects #slider .slide h2 {
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: white;
+  -webkit-transition: top ease-in-out 0.5s;
+  transition: top ease-in-out 0.5s;
+}
+main #progects #slider .slide a {
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 150px;
+  text-decoration: none;
+  color: white;
+  background-color: #7beec7;
+  padding: 5px;
+  -webkit-transition: top ease-in-out 0.7s;
+  transition: top ease-in-out 0.7s;
+}
+main #progects #slider .slide:hover #focus-tab {
+  left: 0;
+}
+main #progects #slider .slide:hover h2 {
+  top: 40px;
+}
+main #progects #slider .slide:hover a {
+  top: 80px;
+}
