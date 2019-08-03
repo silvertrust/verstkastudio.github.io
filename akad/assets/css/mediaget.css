@@ -325,9 +325,6 @@
   main {
     margin: 40px auto 0 auto;
   }
-  .h2_box {
-    margin: 20px auto 20px auto;
-  }
   body #wrapper {
     grid-gap: 20px;
   }
