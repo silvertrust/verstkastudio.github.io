@@ -1,5 +1,5 @@
 window.onload = function(){
-  slowFade(document.querySelector('body'));
+slowFade(document.querySelector('body'));
 var tumbler = false;
   //Движение всей странички вврех
 document.getElementById('wrapper').style.top = 0;
