@@ -1,4 +1,5 @@
 window.onload = function(){
+  slowFade(document.querySelector('body'));
 var tumbler = false;
   //Движение всей странички вврех
 document.getElementById('wrapper').style.top = 0;
@@ -233,15 +234,4 @@ window.onscroll = equalChooseHeight;
 //ПАРАЛАКС ЭФЕКТ БЛОКА PORTFOLIO
 var heightPOrtfolio = document.getElementById('select_block').offsetHeight; //ВЫСОТА БЛОКА Portfolio
 var portfolioY = document.getElementById('select_block').offsetTop;//Высота до верха страницы
-/* equalPortfolioHeight();
-function equalPortfolioHeight(){     //ФУНКЦИЯ  ПРОВЕРКИ АНИМАИРОВАТЬ ЛИ БЛОК Portfolio
-const y = window.pageYOffset;    // Y КООРДИНАТА ПРОКРУТКИ СТРАНИЦЫ
-if (y >= (portfolioY - (Math.round((2*(availHeight/3))+30))) && (y<(portfolioY+heightPOrtfolio) )){  //Приделы Y когда анимация активна
-console.log('Function equalPortfolioHeight = Ok');
-}
-}*/
-
-// equalScreenWidthAdd(document.querySelector('#category li')); // Активация первого пункта меню при хагрузке старницы
-// setInterval(function(){animatePhoto(all)},200);
-//АНИМАЦИЯ КУРСОРА МЕНЮ ПОРТФОЛИО
 } 

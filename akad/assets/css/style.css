@@ -6,10 +6,6 @@
   background: url(../img/HeaderBG.png) no-repeat center;
   background-size: cover;
 }
-body {
-  display: block;
-  margin: 0 auto;
-}
 body #wrapper {
   display: grid;
   position: relative;
