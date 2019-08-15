@@ -1,14 +1,11 @@
 
   // niceScroll
-  $("html").niceScroll();
+  //$("html").niceScroll();
     
     
   // Stick menu
   if ( $(window).width() > 767){$(".menu").sticky({topSpacing:0});}
   else {$(".menu").fadeOut;}
-
-
-
 
   // Menu Scroll to content and Active menu
   var lastId,
@@ -52,7 +49,7 @@
   });  
   
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     
     $(".footer").css( "position", "relative" );
     $(".contact").css( "marginBottom", "0" );
@@ -78,7 +75,7 @@ else
 
 }
 
-
+*/
 
   //Menu mobile click
   $( ".icon" ).click(function() {
