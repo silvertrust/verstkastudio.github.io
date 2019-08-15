@@ -427,15 +427,6 @@ h1 span{
   flex-wrap: wrap;
 }
 
-.about-us .column-one{
-  /*margin-top:40px;*/
-  width:273px;
-  display: inline-block;
- /* float:left;
-  margin-bottom:70px;*/
-  height:350px;
-}
-
 .about-us .column-one .circle-one{
   height: 100px;
   position:relative;
@@ -599,28 +590,80 @@ h1 span{
 .grid{
   margin-top:70px;
   width:100%;
-  position:relative;
+  /*position:relative;*/
   margin-bottom:190px;
   overflow:hidden;
-}
+ }
 
 .grid li{
   width:285px;
-  height: 170px;
-  overflow: hidden;
-  margin:0 15px 15px 0;
+  height: 193px;
+  margin:0 10px 15px 0;
   float: left;
   position: relative;
   overflow: hidden;
 }
-
-.grid img{
-  width:285px;
-  float: left;
-  position: relative;
+.grid li:hover .background{
+  background-color: rgba(170, 156, 75, 0.8);
+}
+.grid li:hover .teg {
+  top:30%;
+}
+.grid li:hover .description{
+  top: 55%;
 }
 
-.grid .text {
+.grid a img{
+  width:100%;
+  height: 100%;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.grid .background{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 193px;
+  background-color: rgba(170, 156, 75, 0);
+  transition: all ease-in-out 1s;
+  top:0;
+  left:0;
+  z-index: 20;
+}
+.grid a{
+  display: block;
+  text-align: center;
+}
+.grid .teg{
+  position: absolute;
+  display: block;
+  width: fit-content;
+  font-family: 'Myriad Pro',sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+  top:120%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 21;
+  transition: top ease-in-out .7s;
+}
+.grid .description{
+  position: absolute;
+  display: block;
+  width: fit-content;
+  font-family: 'Myriad Pro',sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: white;
+  top:120%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  z-index: 21;
+  transition: top ease-in-out .7s;
+}
+/*.grid .text {
   position: absolute;
   width: 285px;
   height:100%;
@@ -635,7 +678,7 @@ h1 span{
 }
 
 .grid .text:hover {
-  opacity:1;
+  opacity:0.7;
 }
 
 .grid .no-text {
@@ -675,7 +718,7 @@ h1 span{
   font-weight: 400;
   color: #FFF;
   position:relative;
-}
+}*/
 
 .clear { 
     clear:both; 
@@ -846,8 +889,8 @@ h1 span{
   color:black;
   font-size:14px;
   line-height:26px;
-  font-family: 'Myriad Pro',sans-serif;
-  font-weight: 600;
+  font-family: 'Acrobat',sans-serif;
+  font-weight: 300;
 }
 
 strong{
