@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('Akrobat-Light.eot');
+    src: url('Akrobat-Light.eot?#iefix') format('embedded-opentype'),
+        url('Akrobat-Light.woff2') format('woff2'),
+        url('Akrobat-Light.woff') format('woff'),
+        url('Akrobat-Light.ttf') format('truetype'),
+        url('Akrobat-Light.svg#Akrobat-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Cond.eot');
+    src: url('MyriadPro-Cond.eot?#iefix') format('embedded-opentype'),
+        url('MyriadPro-Cond.woff2') format('woff2'),
+        url('MyriadPro-Cond.woff') format('woff'),
+        url('MyriadPro-Cond.ttf') format('truetype'),
+        url('MyriadPro-Cond.svg#MyriadPro-Cond') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Semibold.eot');
+    src: url('MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('MyriadPro-Semibold.woff2') format('woff2'),
+        url('MyriadPro-Semibold.woff') format('woff'),
+        url('MyriadPro-Semibold.ttf') format('truetype'),
+        url('MyriadPro-Semibold.svg#MyriadPro-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
